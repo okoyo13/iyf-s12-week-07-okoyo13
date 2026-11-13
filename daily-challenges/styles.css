@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 30px 15px;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+header,
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+}
+
+#search-form input {
+    flex: 1;
+    min-width: 0;
+}
+
+#history-dropdown {
+    margin-top: 15px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#history-list li {
+    margin-bottom: 5px;
+}
+
+.history-item {
+    width: 100%;
+    text-align: left;
+    background-color: #e5e7eb;
+    color: #222;
+}
+
+#search-result,
+#autosave-status {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Dark theme */
+body.dark {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark section {
+    background-color: #374151;
+}
+
+body.dark input,
+body.dark textarea {
+    background-color: #1f2937;
+    color: white;
+    border-color: #6b7280;
+}
+
+body.dark .history-item {
+    background-color: #4b5563;
+    color: white;
+}
+
+body.dark #search-result,
+body.dark #autosave-status {
+    color: #f9fafb;
+}

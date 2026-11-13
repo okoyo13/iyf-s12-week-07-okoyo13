@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Shopping Cart</h1>
+            <p>Browse products and manage your cart.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Available Products</h2>
+                <div id="product-list"></div>
+            </section>
+
+            <section>
+                <h2>Your Cart (<span id="cart-count">0</span> items)</h2>
+                <div id="cart-items"></div>
+
+                <h3>Total: $<span id="cart-total">0</span></h3>
+
+                <button type="button" id="clear-cart">Clear Cart</button>
+            </section>
+        </main>
+
+        <script type="module" src="./cart.js"></script>
+    </body>
+</html>

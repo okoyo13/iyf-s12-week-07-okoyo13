@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Week 7 - Daily Challenges</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Daily Challenges</h1>
+            <p>Week 7 JavaScript Practice</p>
+            <button type="button" id="theme-toggle">Switch to Dark Mode</button>
+        </header>
+
+        <main>
+            <!-- Day 1: Theme Persistence -->
+            <section id="day-1">
+                <h2>Day 1: Theme Persistence</h2>
+                <p>
+                    Switch between light and dark mode. Your preference is
+                    saved.
+                </p>
+            </section>
+
+            <!-- Day 2: Recent Searches -->
+            <section id="day-2">
+                <h2>Day 2: Recent Searches</h2>
+
+                <form id="search-form">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Enter your search..."
+                        autocomplete="off"
+                        required
+                    />
+                    <button type="submit">Search</button>
+                </form>
+
+                <div id="history-dropdown">
+                    <h3>Recent Searches</h3>
+                    <ul id="history-list"></ul>
+                </div>
+
+                <p id="search-result"></p>
+            </section>
+
+            <!-- Day 3: Form Auto-Save -->
+            <section id="day-3">
+                <h2>Day 3: Form Auto-Save</h2>
+                <p>Your form data will automatically save every 5 seconds.</p>
+
+                <form id="autosave-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Submit Form</button>
+                </form>
+
+                <p id="autosave-status">No saved data yet.</p>
+            </section>
+
+            <!-- Day 4: Refactor Challenge -->
+            <section id="day-4">
+                <h2>Day 4: Refactor Challenge</h2>
+                <p>
+                    Review and refactor previously written code. Focus on error
+                    handling, meaningful names, reusable functions and helpful
+                    comments.
+                </p>
+            </section>
+
+            <!-- Day 5: Code Review -->
+            <section id="day-5">
+                <h2>Day 5: Code Review</h2>
+                <p>Review your Weather Dashboard and document improvements.</p>
+
+                <ul>
+                    <li>Does it handle all error cases?</li>
+                    <li>Is the code well-organized?</li>
+                    <li>Can another developer understand it?</li>
+                </ul>
+
+                <label for="review-notes">Improvements needed:</label>
+                <textarea
+                    id="review-notes"
+                    placeholder="Write your code review findings here..."
+                ></textarea>
+            </section>
+        </main>
+    </body>
+</html>
