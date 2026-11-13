@@ -4,7 +4,6 @@
 
 [View the live application here:](https://okoyo13.github.io/iyf-s12-week-07-okoyo13/)
 
-**IYF S12 Web Development Assignment**
 
 This repository contains my Week 07 JavaScript project, focused on modular JavaScript, code organization, reusable functions, testing, and practical application development.
 
