@@ -35,7 +35,17 @@ export function loadState() {
         }
 
         return {
-            todos: parsedState.todos,
+            todos: parsedState.todos.filter(
+                (todo) =>
+                    todo &&
+                    typeof todo === 'object' &&
+                    !Array.isArray(todo) &&
+                    todo.id !== undefined &&
+                    todo.id !== null &&
+                    todo.id !== '' &&
+                    typeof todo.text === 'string' &&
+                    typeof todo.completed === 'boolean'
+            ),
             filter: ['all', 'active', 'completed'].includes(parsedState.filter)
                 ? parsedState.filter
                 : 'all',
